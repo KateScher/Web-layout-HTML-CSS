@@ -1,0 +1,50 @@
+body {
+  background: url('video.png');
+  background-size: cover;
+}
+
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+
+a {
+text-decoration: none;
+}
+
+.link {
+color: cornflowerblue;
+font-size: 16px;
+line-height: 20px;
+}
+
+.title1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #dc1853;
+color: #222222;
+font-size: 28px;
+line-height: 36px;
+font-weight: bold;
+}
+
+.text {
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+color: #7D7987;
+}
+
+.title2 {
+color: coral;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 80px;
+}
