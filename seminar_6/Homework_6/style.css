@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  min-height: 75px;
+  justify-content: space-between;
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  display: flex;
+  margin-left: 231px;
+  align-items: end;
+  gap: 41px;
+  margin-bottom: 20px;
+}
+
+.site-navi {
+  display: flex;
+  margin: 26px 240px 20px 0;
+  align-items: center;
+  gap: 33px;
+}
+
+.brand {
+  display: flex;
+  background-color: rgba(241, 228, 230, 1);
+}
+
+.text_brand {
+  padding-left: 63px;
+}
+
+.titles {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+  margin-top: 290px;
+}
+
+.title_brand {
+  color: #222;
+  font-size: 48px;
+  font-family: Lato;
+  font-weight: 900;
+  line-height: 58px;
+}
+
+.title_brand2 {
+  color: #222;
+  font-size: 32px;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+span {
+  color: rgba(241, 109, 127, 1);
+}
+
+.sale {
+  margin-top: 65px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.saling {
+  position: relative;
+  display: flex;
+}
+
+.text_sale {
+  position: absolute;
+  text-align: center;
+  width: 360px;
+  background-color: rgba(33, 22, 22, 0.7);
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.sale_text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: 'Lato';
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.sale_women {
+  color: rgba(241, 109, 127, 1);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.fetured {
+  margin-top: 96px;
+}
+
+.feturing {
+  text-align: center;
+}
+
+.text_fetured {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: 
+  rgba(34, 34, 34, 1);
+  margin-bottom: 6px;
+}
+
+.parag {
+  color: rgba(159, 159, 159, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 48px;
+}
