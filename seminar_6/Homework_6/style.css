@@ -126,6 +126,9 @@ span {
 
 .fetured {
   margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .feturing {
@@ -147,4 +150,66 @@ span {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 48px;
+}
+
+.fetur_fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 230px;
+  padding-right: 230px;
+}
+
+.fetur_foto {
+
+}
+
+.fetur_text {
+  background-color: rgba(248, 248, 248, 1);
+  width: 360px;
+}
+
+.fetur_title {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.6px;
+  padding: 24px 0 12px 18px;
+}
+
+.fetur_parag {
+  width: 315px;
+  color: #5D5D5D;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding-left: 18px;
+}
+
+.fetur_price {
+  color: rgba(241, 109, 127, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 0 20px 18px;
+}
+
+.content__btn {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.content__btn__button {
+    display: flex;
+    margin-top: 49px;
+    margin-bottom: 60px;
+    background: #FFF; 
+    color: #F26376; 
+    font-size: 16px;
+    padding: 14px 39px; 
+    text-decoration: none; 
+    border-color: rgba(255, 106, 106, 1);
+    cursor: pointer;
+    outline: none;
 }
