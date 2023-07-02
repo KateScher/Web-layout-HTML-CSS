@@ -56,7 +56,6 @@ img {
   display: flex;
   background-color: rgba(241, 228, 230, 1);
   justify-content: center;
-  al
 }
 
 .text_brand {
@@ -151,6 +150,11 @@ span {
 
 .feturing {
   text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text_fetured {
@@ -402,22 +406,41 @@ span {
 
   .fetured {
     margin-top: 64px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .parag {
     margin-bottom: 65px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
   }
 
   .fetur_fotos {
     display: flex;
     box-sizing: border-box;
+    width: 100%;
     justify-content: center;
     padding-left: 8px;
     padding-right: 8px;
   }
 
+  .fetur_foto {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   .fetur_text {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .fetur_title {
