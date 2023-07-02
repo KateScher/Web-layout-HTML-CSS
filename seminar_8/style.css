@@ -1,0 +1,11 @@
+div {
+  position: relative;
+  background-color: aquamarine;
+  opacity: 0.5;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}

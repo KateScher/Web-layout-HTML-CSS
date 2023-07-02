@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  min-height: 75px;
+  justify-content: space-between;
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  display: flex;
+  margin-left: 231px;
+  align-items: end;
+  gap: 41px;
+  margin-bottom: 20px;
+}
+
+.button_menu {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.site-navi {
+  display: flex;
+  margin: 26px 240px 20px 0;
+  align-items: center;
+  gap: 33px;
+}
+
+.brand {
+  display: flex;
+  background-color: rgba(241, 228, 230, 1);
+  justify-content: center;
+  al
+}
+
+.text_brand {
+  padding-left: 63px;
+}
+
+.titles {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+  margin-top: 290px;
+}
+
+.title_brand {
+  color: #222;
+  font-size: 48px;
+  font-family: Lato;
+  font-weight: 900;
+  line-height: 58px;
+}
+
+.title_brand2 {
+  color: #222;
+  font-size: 32px;
+  font-family: Lato;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+span {
+  color: rgba(241, 109, 127, 1);
+}
+
+.sale {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-columns: 360px 360px 360px;
+  margin-top: 65px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.saling {
+  position: relative;
+  display: flex;
+}
+
+.sale_long {
+  grid-column: span 3;
+  grid-row: span 1s;
+  /* height: 116px; */
+}
+
+.text_sale {
+  position: absolute;
+  text-align: center;
+  width: 360px;
+  /* background-color: rgba(33, 22, 22, 0.7); */
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.sale_text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-family: 'Lato';
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.sale_women {
+  color: rgba(241, 109, 127, 1);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.fetured {
+  margin-top: 96px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feturing {
+  text-align: center;
+}
+
+.text_fetured {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: 
+  rgba(34, 34, 34, 1);
+  margin-bottom: 6px;
+}
+
+.parag {
+  color: rgba(159, 159, 159, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 48px;
+}
+
+.fetur_fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 230px;
+  padding-right: 230px;
+}
+
+.fetur_text {
+  background-color: rgba(248, 248, 248, 1);
+  width: 360px;
+}
+
+.fetur_title {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.6px;
+  padding: 24px 0 12px 18px;
+}
+
+.fetur_parag {
+  width: 315px;
+  color: #5D5D5D;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding-left: 18px;
+}
+
+.fetur_price {
+  color: rgba(241, 109, 127, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 0 20px 18px;
+}
+
+.content__btn {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.content__btn__button {
+    display: flex;
+    margin-top: 49px;
+    margin-bottom: 60px;
+    background: #FFF; 
+    color: #F26376; 
+    font-size: 16px;
+    padding: 14px 39px; 
+    text-decoration: none; 
+    border-color: rgba(255, 106, 106, 1);
+    cursor: pointer;
+    outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    min-height: 74px;
+  }
+  
+  .site-logo {
+    margin-left: 32px;
+    margin-bottom: 18px;
+  }
+  
+  .site-navi {
+    margin: 27px 41px 18px 0;
+  }
+
+  .btn_profile {
+    margin-right: 9px;
+  }
+  
+  .brand {
+
+  }
+
+  .text_brand {
+    width: 100%;
+    padding-left: 61px;
+  }
+  
+  .titles {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-top: 138px;
+  }
+  
+  .title_brand {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  
+  .title_brand2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+  .sale {
+    grid-template-columns: 232px 232px 232px;
+    margin-top: 65px;
+    gap: 20px;
+  }
+
+  .saling {
+
+  }
+     
+  .text_sale {
+    /* width: 232px;     */
+  }
+    
+  .fetured {
+    margin-top: 110px;
+  }
+    
+  .text_fetured {
+    margin-bottom: 3px;
+  }
+  
+  .parag {
+    margin-bottom: 73px;
+  }
+  
+  .fetur_fotos {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+    
+  .fetur_title {
+    padding: 25px 0 12px 18px;
+  }
+    
+  .fetur_price {
+    padding: 12px 0 20px 18px;
+  }
+  
+  .content__btn__button {
+      margin-bottom: 71px; 
+   
+  }
+  
+}
+.cover {
+  position: absolute;
+  text-align: center;
+  width: 360px;
+  background-color: rgba(33, 22, 22, 0.7);
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    min-height: 74px;
+  }
+
+  .site-logo {
+    margin-left: 16px;
+  }
+
+  .icon_hidden {
+    display: none;
+  }
+
+  .site-navi {
+    margin: 0;
+    padding-right: 16px;
+  }
+
+  .text_brand {
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titles {
+    padding-left: 15px;
+    margin: 148px 56px 149px 56px;
+    max-width: 236px;
+    width: 100%;
+  }
+
+  .title_brand {
+    font-size: 38px;
+    line-height: 45px;
+    width: 236px;
+  }
+  
+  .title_brand2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .sale {
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 64px;
+    gap: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .fetured {
+    margin-top: 64px;
+  }
+
+  .parag {
+    margin-bottom: 65px;
+  }
+
+  .fetur_fotos {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .fetur_text {
+    width: 100%;
+  }
+
+  .fetur_title {
+    padding: 23px 0 12px 18px;
+  }
+
+  .fetur_parag {
+    padding-left: 16px;
+  }
+
+  .fetur_price {
+    padding: 18px 0 20px 18px;
+  }
+
+  .content__btn__button {
+    margin-top: 40px;
+    margin-bottom: 85px;
+    line-height: 19px;
+}
+
+}
+
+@media (min-width: 767px) {
+  .large_hidden {
+    display: none;
+  }
+}
