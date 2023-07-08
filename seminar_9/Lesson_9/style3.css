@@ -1,0 +1,31 @@
+.content {
+  margin-top: 200px;
+  margin-left: 200px;
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #000;
+  background: red;
+  border-top: none;
+  border-bottom: none;
+}
+
+.item_1 {
+  transform: rotate(45deg);
+}
+
+.item_2 {
+  transform: rotate(90deg);
+}
+
+.item_3 {
+  transform: rotate(135deg);
+}
+
+.item_4 {
+  transform: rotate(180deg);
+}

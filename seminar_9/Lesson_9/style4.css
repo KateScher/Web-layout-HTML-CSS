@@ -1,0 +1,31 @@
+@keyframes flip-scale-up-hor {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+            transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+            transform: scale(2.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(0);
+            transform: scale(1) rotateX(0);
+  }
+}
+
+
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.flip-scale-up-hor {
+	-webkit-animation: flip-scale-up-hor 0.5s linear both;
+	        animation: flip-scale-up-hor 0.5s linear both;
+}
