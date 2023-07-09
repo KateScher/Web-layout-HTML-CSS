@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>OnlineStore</title>
   </head>
 
@@ -18,10 +19,6 @@
       <div class="site-navi">
         <button class="button_menu">
           <img src="./img/humburger.png" alt="Меню" />
-          <ul>
-            <h2>MENU</h2>
-            <h3>MAN</h3>
-          </ul>
         </button>
 
         <button class="button_menu btn_profile icon_hidden">
@@ -43,6 +40,74 @@
           <div class="titles">
             <h1 class="title_brand">THE BRAND</h1>
             <h2 class="title_brand2">OF LUXERIOUS <span>FASHION</span></h2>
+          </div>
+        </div>
+        <div class="menu-active hidden">
+          <div class="menu-active__all">
+            <!-- <button class="menu-close">
+              <img src="img/close.svg" alt="close" />
+            </button> -->
+            <h4 class="menu-heading">MENU</h4>
+            <div class="menu-man">
+              <h5 class="menu-text">MAN</h5>
+              <ul class="menu-list">
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Accessories</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Bags</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Denim</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">T-Shirts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-woman">
+              <h5 class="menu-text">WOMAN</h5>
+              <ul class="menu-list">
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Accessories</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Jackets &amp;&nbsp;Coats</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Polos</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">T-Shirts</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Shirts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-kids">
+              <h5 class="menu-text">KIDS</h5>
+              <ul class="menu-list">
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Accessories</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Jackets &amp;&nbsp;Coats</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Polos</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">T-Shirts</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Shirts</a>
+                </li>
+                <li class="menu_lists">
+                  <a class="menu_link" href="#">Bags</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -87,127 +152,130 @@
         </div>
       </section>
 
-      <section class="fetured container">
-        <div class="feturing">
-          <p class="text_fetured">Fetured Items</p>
-          <p class="parag">
-            Shop for items based on what we featured in this week
-          </p>
+      <section class="products container">
+        <div class="main__title">
+          <h3>Fetured Items</h3>
+          <p>Shop for items based on what we featured in this week</p>
         </div>
-        <div class="fetur_fotos">
-          <div class="fetur_foto">
-            <div class="fetur_image">
-              <img src="./img/foto_fetured1.jpg" alt="sportman" />
-              <button class="btn_feture">
-                <img src="./img/Busket_for_fetur.svg" alt="Cart" />Add to Cart
+        <div class="all__cards">
+          <div class="product__card">
+            <div class="prod__image_cont">
+              <img
+                class="product__image"
+                src="./img/foto_fetured1.jpg"
+                alt="man"
+              />
+              <button class="btn">
+                <img src="./img/Busket_for_fetur.svg" alt="cart" />
+                Add to Cart
               </button>
             </div>
-            <div class="fetur_text">
-              <p class="fetur_title">ELLERY X M'O CAPSULE</p>
-              <p class="fetur_parag">
+            <div class="card__text">
+              <h3>ELLERY X M'O CAPSULE</h3>
+              <p>
                 Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda
                 Operandi.
               </p>
-              <p class="fetur_price">$52.00</p>
+              <h4>$52.00</h4>
             </div>
           </div>
-
-          <div class="fetur_foto">
-            <div class="fetur_image">
-              <img src="./img/foto_fetured2.png" alt="officegoods_women" />
-              <button class="btn_feture">
-                <img src="./img/Busket_for_fetur.svg" alt="Cart" />Add to Cart
+          <div class="product__card">
+            <div class="prod__image_cont">
+              <img src="./img/foto_fetured2.png" alt="woman" />
+              <button class="btn">
+                <img src="./img/Busket_for_fetur.svg" alt="cart" />
+                Add to Cart
               </button>
             </div>
-            <div class="fetur_text">
-              <p class="fetur_title">ELLERY X M'O CAPSULE</p>
-              <p class="fetur_parag">
+            <div class="card__text">
+              <h3>ELLERY X M'O CAPSULE</h3>
+              <p>
                 Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda
                 Operandi.
               </p>
-              <p class="fetur_price">$52.00</p>
+              <h4>$52.00</h4>
             </div>
           </div>
-
-          <div class="fetur_foto">
-            <div class="fetur_image">
-              <img src="./img/foto_fetured3.png" alt="beachgoods_men" />
-              <button class="btn_feture">
-                <img src="./img/Busket_for_fetur.svg" alt="Cart" />Add to Cart
+          <div class="product__card">
+            <div class="prod__image_cont">
+              <img src="./img/foto_fetured3.png" alt="man" />
+              <button class="btn">
+                <img src="./img/Busket_for_fetur.svg" alt="cart" />
+                Add to Cart
               </button>
             </div>
-            <div class="fetur_text">
-              <p class="fetur_title">ELLERY X M'O CAPSULE</p>
-              <p class="fetur_parag">
+            <div class="card__text">
+              <h3>ELLERY X M'O CAPSULE</h3>
+              <p>
                 Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda
                 Operandi.
               </p>
-              <p class="fetur_price">$52.00</p>
+              <h4>$52.00</h4>
             </div>
           </div>
-
-          <div class="fetur_foto">
-            <div class="fetur_image">
-              <img src="./img/foto_fetured4.png" alt="everywear_men" />
-              <button class="btn_feture">
-                <img src="./img/Busket_for_fetur.svg" alt="Cart" />Add to Cart
+          <div class="product__card">
+            <div class="prod__image_cont">
+              <img src="./img/foto_fetured4.png" alt="man" />
+              <button class="btn">
+                <img src="./img/Busket_for_fetur.svg" alt="cart" />
+                Add to Cart
               </button>
             </div>
-            <div class="fetur_text">
-              <p class="fetur_title">ELLERY X M'O CAPSULE</p>
-              <p class="fetur_parag">
+            <div class="card__text">
+              <h3>ELLERY X M'O CAPSULE</h3>
+              <p>
                 Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda
                 Operandi.
               </p>
-              <p class="fetur_price">$52.00</p>
+              <h4>$52.00</h4>
             </div>
           </div>
-
-          <div class="fetur_foto">
-            <div class="fetur_image">
-              <img src="./img/foto_fetured5.png" alt="everywear_women" />
-              <button class="btn_feture">
-                <img src="./img/Busket_for_fetur.svg" alt="Cart" />Add to Cart
+          <div class="product__card">
+            <div class="prod__image_cont">
+              <img src="./img/foto_fetured5.png" alt="woman" />
+              <button class="btn">
+                <img src="./img/Busket_for_fetur.svg" alt="cart" />
+                Add to Cart
               </button>
             </div>
-            <div class="fetur_text">
-              <p class="fetur_title">ELLERY X M'O CAPSULE</p>
-              <p class="fetur_parag">
+            <div class="card__text">
+              <h3>ELLERY X M'O CAPSULE</h3>
+              <p>
                 Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda
                 Operandi.
               </p>
-              <p class="fetur_price">$52.00</p>
+              <h4>$52.00</h4>
             </div>
           </div>
-
-          <div class="fetur_foto">
-            <div class="fetur_image">
-              <img src="./img/foto_fetured6.png" alt="summerwear_women" />
-              <button class="btn_feture">
-                <img src="./img/Busket_for_fetur.svg" alt="Cart" />Add to Cart
+          <div class="product__card">
+            <div class="prod__image_cont">
+              <img src="./img/foto_fetured6.png" alt="woman" />
+              <button class="btn">
+                <img src="./img/Busket_for_fetur.svg" alt="cart" />
+                Add to Cart
               </button>
             </div>
-            <div class="fetur_text">
-              <p class="fetur_title">ELLERY X M'O CAPSULE</p>
-              <p class="fetur_parag">
+            <div class="card__text">
+              <h3>ELLERY X M'O CAPSULE</h3>
+              <p>
                 Known for her sculptural takes on traditional tailoring,
                 Australian arbiter of cool Kym Ellery teams up with Moda
                 Operandi.
               </p>
-              <p class="fetur_price">$52.00</p>
+              <h4>$52.00</h4>
             </div>
           </div>
         </div>
       </section>
 
       <section class="container">
-        <div class="content_btn">
-          <button class="content_btn_button">Browse All Product</button>
+        <div class="all__prod__button">
+          <button>Browse All Product</button>
         </div>
       </section>
 
@@ -265,30 +333,26 @@
       </section>
 
       <section class="subscribes container">
-        <div class="subscribes_foto">
-          <div class="subscribe_foto">
-            <img src="./img/subscribe_woman.png" alt="foto" />
-          </div>
-          <div class="subscribes_text">
-            <p class="subscribe_parag">
-              “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-              <i class="font_italic">a pulvinar purus condimentum“</i>
+        <div class="footer__blur">
+          <div class="footer__subscribe__info">
+            <img src="./img/subscribe_woman.png" alt="woman" />
+            <p>
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
             </p>
           </div>
-        </div>
-        <div class="subscribe_right">
-          <h3 class="subscribe_title">SUBSCRIBE</h3>
-          <p class="subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
-          <form class="subscribe_form" method="get">
-            <input
-              class="subscribe_email"
-              type="email"
-              name="email"
-              id="subscribe_email"
-              placeholder="Enter Your Email"
-            />
-            <button class="subscribe_button" type="submit">Subscribe</button>
-          </form>
+          <div class="footer__subsc_subsc">
+            <div class="footer__subsc_subsc__text">
+              <h2>SUBSCRIBE</h2>
+              <p>FOR OUR NEWLETTER AND PROMOTION</p>
+            </div>
+            <div class="footer__subsc__form__btn">
+              <form action="#">
+                <input required type="email" placeholder="Enter Your Email" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 

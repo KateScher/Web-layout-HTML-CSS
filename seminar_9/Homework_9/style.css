@@ -77,7 +77,53 @@ img {
 .brand {
   display: flex;
   background-color: rgba(241, 228, 230, 1);
-  justify-content: center;
+  position: relative;
+}
+
+.menu-active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.menu-heading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  padding: 32px 144px 24px 33px;
+  color: 
+  rgba(0, 0, 0, 1);
+}
+
+.menu-text {
+  padding-left: 32px;
+  padding-bottom: 12px;
+  color: 
+  rgba(241, 109, 127, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 54px;
+  padding-bottom: 20px;
+}
+
+.menu_lists {
+  padding-bottom: 11px;
+}
+
+.menu_link {
+  text-decoration: none;
+  color: rgba(111, 110, 110, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .text_brand {
@@ -163,156 +209,160 @@ span {
   line-height: 29px;
 }
 
-.fetured {
+.products {
   margin-top: 96px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 
-.feturing {
-  text-align: center;
+.main__title {
   display: flex;
-  box-sizing: border-box;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
-.text_fetured {
-  font-size: 30px;
+.main__title h3 {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
+  font-size: 30px;
   line-height: 36px;
-  color: 
-  rgba(34, 34, 34, 1);
-  margin-bottom: 6px;
+  color: #222222;
 }
 
-.parag {
-  color: rgba(159, 159, 159, 1);
+.main__title p {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 48px;
+  color: #9f9f9f;
+  margin-top: 6px;
 }
 
-
-
-.fetur_fotos {
+.all__cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+  margin-top: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-left: 230px;
   padding-right: 230px;
 }
 
-.fetur_foto {
+.product__card {
   display: flex;
   flex-direction: column;
+  width: 360px;
 }
 
-.fetur_image {
+/*--product card hover image --*/
+.prod__image_cont{
   position: relative;
 }
-
-.fetur_image:before {
-  content: '';
+.prod__image_cont:before {
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;left:0;right:0;
+  background-color:rgba(0,0,0,0);
+}
+.prod__image_cont:hover::before {
+  background: rgba(58, 56, 56, 0.86);
+}
+.prod__image_cont img {
+  display:block;
+}
+.prod__image_cont .btn {
+  width: 138px;
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0,0,0,0);
-}
-
-.fetur_image:hover::before {
-  background-color: rgba(58, 56, 56, 0.86);
-}
-
-.fetur_image .btn_feture {
-    width: 139px;
-    height: 44px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    opacity: 0;
-    background: none;
-    border: 1px solid #FFFFFF;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: 
-    rgba(255, 255, 255, 1);
-}
-
-.btn_feture:hover {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity:0;
+  background: none;
+  border: 1px solid #FFFFFF;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+} 
+.prod__image_cont:hover button {   
   opacity: 1;
 }
+/*----*/
 
-.fetur_text {
-  background-color: rgba(248, 248, 248, 1);
-  width: 100%;
+.card__text {
+  background-color: #f8f8f8;
+  padding-left: 16px;
+  padding-right: 29px;
 }
 
-.fetur_title {
-  color: rgba(0, 0, 0, 1);
+.card__text h3 {
+  padding-top: 24px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 15.6px;
-  padding: 24px 0 12px 18px;
+  line-height: 16px;
+  color: #000000;
 }
 
-.fetur_parag {
-  width: 315px;
-  color: #5D5D5D;
+.card__text p {
+  margin-top: 12.6px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 16.8px;
-  padding-left: 18px;
+  line-height: 17px;
+  color: #5d5d5d;
 }
 
-.fetur_price {
-  color: rgba(241, 109, 127, 1);
+.card__text h4 {
+  margin-top: 18px;
+  padding-bottom: 20px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  padding: 18px 0 20px 18px;
+  color: #f16d7f;
 }
 
-.content_btn {
+.all__prod__button {
+  margin-top: 48.5px;
+  margin-bottom: 95px;
   display: flex;
-  justify-content: center;
-  
+  flex-direction: column;
+  align-items: center;
 }
 
-.content_btn_button {
-    display: flex;
-    margin-top: 49px;
-    margin-bottom: 60px;
-    background: #FFF; 
-    color: #F26376; 
-    font-size: 16px;
-    padding: 14px 39px; 
-    text-decoration: none; 
-    border-color: rgba(255, 106, 106, 1);
-    cursor: pointer;
-    outline: none;
+.all__prod__button button {
+  width: 211px;
+  height: 47px;
+  border: 1px solid #ff6a6a;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  background: none;
 }
 
-.content_btn_button:hover {
-  background: rgba(241, 109, 127, 1);
-  border: 1px solid rgba(255, 106, 106, 1);
-  color: rgba(255, 255, 255, 1);
+.all__prod__button button:hover {
+  color: #FFFFFF;
+  background: #F16D7F;
 }
 
 .services {
@@ -384,101 +434,125 @@ span {
 /* Section SUBSCRIBE*/
 
 .subscribes {
-  background: url(./img/photo_subscribe1.png), lightgray 0px -169px / 100% 246.875% no-repeat;
-  display: flex;
-  gap: 327px;
+  background: url(./img/photo_subscribe2.png), lightgray 0px -169px / 100% 246.875% no-repeat;
+  /* display: flex; */
+  /* gap: 327px; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.subscribes_foto {
-  padding-left: 230px;
+.footer__blur {
+  background: rgba(244, 244, 244, 0.7);
+  height: 448px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 223px;
+}
+
+.footer__subscribe__info {
+  width: 360px;
+  height: 225px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding-bottom: 26px;
 }
 
-.subscribe_foto {
-  padding-top: 97px;
-  padding-bottom: 30px;
+.footer__subscribe__info p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  height: 99px;
 }
 
-.subscribes_text {
+.footer__subsc_subsc {
+  width: 557px;
+  height: 142px;
   display: flex;
-  width: 100%;
-  max-width: 360px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__subsc_subsc__text {
   text-align: center;
 }
 
-.subscribe_parag {
-  color: 
-  rgba(34, 34, 36, 1);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.font_italic {
-  font-style: italic;
-}
-
-.subscribe_right {
-  padding-top: 150px;
-}
-
-.subscribe_title {
-  display: flex;
-  justify-content: center ;
-  font-family: 'Lato', sans-serif;
+.footer__subsc_subsc__text h2 {
+  font-family: 'Lato';
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 38px;
-  font-style: normal;
-  color: rgba(34, 34, 36, 1);
+  line-height: 40px;
+  color: #222224;
 }
 
-.subscribe_text {
-  font-family: 'Lato', sans-serif;
+.footer__subsc_subsc__text p {
+  font-family: 'Lato';
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: rgba(34, 34, 36, 1);
+  color: #222224;
 }
 
-.subscribe_form {
-  padding-top: 32px;
-  display: flex;
-  max-width: 356px;
-  padding-bottom: 156px;
-}
-
-.subscribe_email {
-  font-family: 'Lato', sans-serif;
-    width: 256px;
-    height: 49px;
-    padding: 0 22px;
-    border: none;
-    border-radius: 24px 0 0 24px;
-    background-color: rgba(225, 225, 225, 1);
-    color: rgba(34, 34, 36, 1);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-
-}
-
-.subscribe_button {
+.footer__subsc__form__btn form{
+  width: 356px;
+  height: 49px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 85px;
-  height: 49px;
-  border: none;
-  border-radius: 0 24px 24px 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
+}
+.footer__subsc__form__btn input{
+  width: 256px;
+  font-family: 'Lato';
+  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(224, 92, 110, 1);
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #222224;
+  opacity: 0.67;
+  background: #E1E1E1;
+border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+position: relative;
+  z-index: 1;
+overflow: hidden;
+  padding-left: 22px;
+  border: none;
+}
+
+.footer__subsc__form__btn button{
+  width: 100px;
+  height: 49px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  background: #F16D7F;
+  cursor:pointer;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+vertical-align: middle;	
+  padding-left: 15px;
+  border: none;
+}
+
+.footer__subsc__form__btn {
+  max-width: 341px;
+  width: 100%;
 }
 
 /* Footer*/
@@ -510,7 +584,7 @@ span {
   gap: 7px;
   padding-top: 24px;
   padding-right: 230px;
-  padding-bottom: 28px;
+  padding-bottom: 22px;
 }
 
 .social_link {
@@ -550,10 +624,6 @@ span {
     margin-right: 9px;
   }
   
-  .brand {
-
-  }
-
   .text_brand {
     width: 100%;
     padding-left: 61px;
@@ -574,6 +644,10 @@ span {
     font-size: 24px;
     line-height: 29px;
   }
+
+  .menu-active {
+    display: none;
+  }
   
   .sale {
     grid-template-columns: 232px 232px 232px;
@@ -581,46 +655,69 @@ span {
     gap: 20px;
   }
 
-  .saling {
-
-  }
-     
-  .text_sale {
-    /* width: 232px;     */
-  }
-    
-  .fetured {
+         
+  .products {
     margin-top: 110px;
   }
-    
-  .text_fetured {
-    margin-bottom: 3px;
+      
+  .main__title p {
+    margin-top: 3px;
   }
   
-  .parag {
-    margin-bottom: 73px;
-  }
-  
-  .fetur_fotos {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
+  .all__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-top: 72px;
   }
     
-  .fetur_title {
-    padding: 25px 0 12px 18px;
-  }
-    
-  .fetur_price {
-    padding: 12px 0 20px 18px;
-  }
   
-  .content__btn__button {
-      margin-bottom: 71px; 
+  
+  .all__prod__button {
+    margin-top: 33px;
+      margin-bottom: 65px; 
    
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+
+  .services_icons {
+    margin: 0 auto;
+    padding-top: 48px;
+  }
+
+  .subscribes {
+    flex-direction: column;
+    /* width: 768px;
+    height: 693px; */
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .footer__blur {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 54px;
+    padding-bottom: 130px;
+  }
+
+  .footer {
+
+  }
+
+  .footer_rights {
+    padding-left: 32px;
+  }
+
+  .footer_icons {
+    padding-right: 32px;
   }
   
 }
@@ -690,6 +787,10 @@ span {
     line-height: 24px;
   }
 
+  .menu-active {
+    display: none;
+  }
+
   .sale {
     /* grid-template-columns: 1fr; */
     display: flex;
@@ -700,69 +801,120 @@ span {
     padding-right: 16px;
   }
 
-  .fetured {
+  .products {
     margin-top: 64px;
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    justify-content: center;
-    max-width: 359px;
-  }
+}
 
-  .parag {
-    margin-bottom: 65px;
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    flex-direction: column;
-  }
+.main__title p {
+  display: flex;;
+  max-width: 375px;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
-  .fetur_fotos {
+.all__cards {
     display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    justify-content: center;
+    margin-top: 64px;
     padding-left: 8px;
     padding-right: 8px;
-    max-width: 359px;
-  }
+}
 
-  .fetur_foto {
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    max-width: 359px;
-  }
+.all__prod__button {
+    margin-top: 41px;
+}
 
-  .fetur_text {
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 359px;
-  }
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 64px;
+}
 
-  .fetur_title {
-    padding: 23px 0 12px 18px;
-  }
+.services_icons {
+  margin: 0 auto;
+  padding-top: 48px;
+}
 
-  .fetur_parag {
-    padding-left: 16px;
-  }
+.subscribes {
+  flex-direction: column;
+  /* width: 768px;
+  height: 693px; */
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
 
-  .fetur_price {
-    padding: 18px 0 20px 18px;
-  }
+.footer__blur {
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 54px;
+  padding-bottom: 130px;
+}
 
-  .content__btn__button {
-    margin-top: 40px;
-    margin-bottom: 85px;
-    line-height: 19px;
+.footer__subscribe__info {
+  max-width: 343px;
+  width: 100%;
+  height: 194px;
+  justify-content: space-between;
+}
+
+.footer__subscribe__info p {
+  height: 73px;
+  font-size: 18px;
+}
+
+.footer__subsc_subsc {
+  max-width: 341px;
+  width: 100%;
+  height: 123px;
+}
+
+.footer__subsc_subsc__text {
+  text-align: center;
+}
+
+.footer__subsc_subsc__text h2 {
+  line-height: 36px;
+}
+
+.footer__subsc_subsc__text p {
+  font-size: 14px;
+  line-height: 21.45px;
+}
+
+.footer__subsc__form__btn form{
+  max-width: 341px;
+  width: 100%;
+  height: 47px;
+}
+
+.footer__subsc__form__btn input{
+  max-width: 245px;
+  width: 100%;
+}
+
+.footer__subsc__form__btn button{
+  max-width: 95px;
+  width: 100%;
+  height: 47px;
+} 
+
+.footer {
+  flex-direction: column-reverse;
+}
+
+.footer_rights {
+  padding-left: 0;
+  justify-content: center;
+  padding-bottom: 9px;
+}
+
+.footer_icons {
+  padding-top: 43px;
+  padding-bottom: 40px;
+  padding-right: 0;
+  justify-content: center;
 }
 
 }
