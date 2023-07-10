@@ -1,5 +1,5 @@
 const menuActive = document.querySelector(".menu-active"); // Найти меню, console.log(menuActive);
-const headerMenu = document.querySelector(".button_menu"); // найти кнопку бургера
+const headerMenu = document.querySelector(".site-navi"); // найти кнопку бургера
 const menuClose = document.querySelector(".menu-close"); // найти кнопку крестика
 
 function toggleMenu() {
